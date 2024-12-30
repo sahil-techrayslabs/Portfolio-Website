@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+body{
+    background:url(login-bg2.jpeg) ;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+.login-section h2{
+    color: #fc032c;
+    font-size: 20px;
+    font-weight: 600;
+}
+.login-section{
+    border:2px solid #fc032c;
+    height: 490px;
+    width: 400px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.login-section:hover{
+    box-shadow: 0 0 60px #fc032c;
+}
+.login-section .formbox{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+}
+.formbox h2{
+    text-align: center;
+    font-size: 35px;
+}
+.formbox .input-box{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #fc032c;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+    color: #fc032c;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fc032c;
+    transition: 0.3s ease;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+    color: #fc032c;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.remember-password{
+    font-size: 15px;
+    font-weight: 600;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #fc032c;
+}
+.remember-password label input{
+    accent-color: #03fcd3;
+    margin-right: 3px;
+}
+.remember-password a{
+    color: #fc032c;
+    text-decoration: none;
+}
+.remember-password a:hover{
+    color: #03fcd3;
+}
+.btn{
+    width: 85%;
+    height: 45px;
+    margin: 30px;
+    background-color: #fc032c;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+.btn:hover{
+    scale: 1.1;
+    color: #fc032c;
+    border: 2px solid #fc032c;
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px #fc032c;
+}
+.create-account{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+.create-account p{
+    color: #fc032c;
+}
+.create-account p a{
+    color: #fc032c;
+    font-weight: 600;
+    text-decoration: none;
+}
+.create-account p a:hover{
+    color: #03fcd3;
+    font-weight: 600;
+}
+
+

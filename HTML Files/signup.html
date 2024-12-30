@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+</head>
+<body>
+    <div class="signup-section">
+    <div class="formbox sign-up">
+        <form onsubmit="signup()" id="signup-form">
+            <h2>Sign-Up.</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <i class='bx bx-user-circle'></i>
+                </span>
+                <input id="username" type="name" required>
+                <label>User Name</label>
+                </div>
+            <div class="input-box">
+                <span class="icon">
+                    <i class='bx bx-envelope' ></i>
+                </span>
+                <input id="email" type="email" required>
+                <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                <span class="icon">
+                    <i class='bx bx-lock-alt'></i>
+                </span>
+                <input id="password" type="Password" required>
+                <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bx-lock-alt'></i>
+                    </span>
+                    <input id="Confirm-Password" type="Password" required>
+                    <label>Confirm Password</label>
+                    </div>
+                <button id="btn" class="btn">Sign-Up.</button>
+                <div class="create-account">
+                    <p>Already have an account? <a href="login.html" class="login-link">Log In.</a> </p>
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+<!--<script>
+    function saveData(){
+        let UserName = document.getElementById("username").value;
+        let Email = document.getElementById("email").value;
+        let Password = document.getElementById("password").value;
+
+
+        let User_Records = new Array();
+        User_Records = JSON.parse(localStorage.getItem("User"))?JSON.parse(localStorage.getItem("User")):[]
+        if (User_Records.some(((v)=>{
+            return v.Email == Email
+        }))) {
+            alert("Duplicate Data")
+        }
+        else{
+            User_Records.push({
+                "User-Name":UserName,
+                "Email":Email,
+                "Password":Password
+            })
+            localStorage.setItem("User",JSON.stringify(User_Records));
+            alert("Registration successful! Please login.");
+            window.location.href = "file:///Users/sahilkriplani/Desktop/Html,Css,Js/portfolio/login.html";
+        }
+
+    }
+</script>-->
+</html>
